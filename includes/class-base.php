@@ -22,10 +22,18 @@ class Base {
 	}
 
 	public function __construct() {
-		add_action('wp_footer', [ $this, 'testing'] );
+		add_action('the_content', [ $this, 'execute'] );
 	}
 
-	public function testing() {
-		echo 'something';
+	public function execute() {
+		?>
+		<div class="dp-output" style="margin: 0 auto;">
+			<p>
+				<?php
+				echo 'something';
+				?>
+			</p>
+		</div>
+		<?php
 	}
 }
