@@ -1,0 +1,27 @@
+{
+  "name": "wpe-page-template",
+  "version": "1.0.0",
+  "description": "Organize page templates",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "watch": "./node_modules/.bin/webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samsmith89/wpe-page-template.git"
+  },
+  "author": "gsamsmith",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/samsmith89/wpe-page-template/issues"
+  },
+  "homepage": "https://github.com/samsmith89/wpe-page-template#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
