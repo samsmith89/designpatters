@@ -35,7 +35,7 @@ spl_autoload_register( function( $class_name ) {
 		// If we're at the first entry, then we're at the filename.
 		if ( count( $file_parts ) - 1 === $i ) {
 
-			if ( strpos( strtolower( $file_parts[ count( $file_parts ) - 1 ] ), 'interface' ) ) {
+			if ( strpos( strtolower( $file_parts[ count( $file_parts ) - 1 ] ), 'interfaces' ) ) {
 
 				// Grab the name of the interface from its qualified name.
 				$interface_name = explode( '_', $file_parts[ count( $file_parts ) - 1 ] );
