@@ -1,7 +1,7 @@
 <?php
 namespace DP\Includes;
 
-use DP\Includes\Interfaces\Duck;
+use DP\Includes\Duck;
 
 /**
  * Creates the additional column on admin pages for page template name
@@ -9,12 +9,17 @@ use DP\Includes\Interfaces\Duck;
  * @since 1.0.0
  */
 
-class WildTurkey {
+class DecoyDuck extends Duck {
+
+	public function display() {
+		return "I exist!!!";
+	}
+
 	public function fly() {
 		return "flying";
 	}
 
-	public function gobble() {
-		return "HONK!!!";
+	public function quack() {
+		return "QUACK!!!";
 	}
 }

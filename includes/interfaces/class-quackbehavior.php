@@ -9,10 +9,8 @@ use DP;
  * @since 1.0.0
  */
 
-interface Duck {
+interface QuackBehavior {
 
 	public function quack();
-
-	public function fly();
 
 }

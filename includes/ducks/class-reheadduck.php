@@ -1,7 +1,7 @@
 <?php
 namespace DP\Includes;
 
-use DP\Includes\Interfaces\Duck;
+use DP\Includes\Duck;
 
 /**
  * Creates the additional column on admin pages for page template name
@@ -9,7 +9,12 @@ use DP\Includes\Interfaces\Duck;
  * @since 1.0.0
  */
 
-class MallardDuck implements Duck {
+class RedheadDuck extends Duck {
+
+	public function display() {
+		return "I exist!!!";
+	}
+
 	public function fly() {
 		return "flying";
 	}

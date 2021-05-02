@@ -1,7 +1,7 @@
 <?php
 namespace DP\Includes;
 
-use DP\Includes\MallardDuck;
+use DP\Includes\Ducks\MallardDuck;
 
 /**
  * Creates the additional column on admin pages for page template name
@@ -16,10 +16,6 @@ class DuckSimulator {
 		$this->setDuck(new MallardDuck());
 		$duck = $this->getDuck();
 		$this->testDuck($duck);
-
-		$this->setDuck(new WildTurkey());
-		$turkeyadapter = new TurkeyAdapter($this->getDuck());
-		$this->testDuck($turkeyadapter);
 	}
 
 	public function setDuck($duck) {
@@ -31,8 +27,8 @@ class DuckSimulator {
 	}
 
 	public function testDuck($duck) {
-		$flystr = $duck->fly();
-		$quackstr = $duck->quack();
+		$flystr = $duck->performFly();
+		$quackstr = $duck->performQuack();
 		$words = "what";
 		echo $flystr . $words . $quackstr;
 	}
