@@ -30,7 +30,8 @@ class Base {
 		<div class="dp-output" style="margin: 0 auto;">
 			<p>
 				<?php
-				echo 'something';
+				$pizza = new Pizza();
+				echo $pizza->orderPizza('ham');
 				?>
 			</p>
 		</div>
