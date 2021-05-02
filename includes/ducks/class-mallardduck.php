@@ -14,7 +14,8 @@ use DP\Includes\Duck;
 class MallardDuck extends Duck {
 
 	public function __construct() {
-		$this->quackBehavior = new Quack();
+		// could pass in params to make decisions at runtime
+		$this->setQuackBehavior( new Quack() );
 		$this->setFlyBehavior( new FlyWithWings() );
 	}
 

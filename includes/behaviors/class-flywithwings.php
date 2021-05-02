@@ -11,6 +11,6 @@ use DP\Includes\Interfaces\FlyBehavior;
 
 class FlyWithWings implements FlyBehavior {
 	public function fly() {
-		return "I'm flying";
+		return "I'm flying!!!";
 	}
 }

@@ -1,6 +1,8 @@
 <?php
-namespace DP\Includes;
+namespace DP\Includes\Ducks;
 
+use DP\Includes\Behaviors\FlyWithWings;
+use DP\Includes\Behaviors\Quack;
 use DP\Includes\Duck;
 
 /**
@@ -11,15 +13,13 @@ use DP\Includes\Duck;
 
 class RedheadDuck extends Duck {
 
+	public function __construct() {
+		// could pass in params to make decisions at runtime
+		$this->setQuackBehavior( new Quack() );
+		$this->setFlyBehavior( new FlyWithWings() );
+	}
+
 	public function display() {
 		return "I exist!!!";
-	}
-
-	public function fly() {
-		return "flying";
-	}
-
-	public function quack() {
-		return "QUACK!!!";
 	}
 }

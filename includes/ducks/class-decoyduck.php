@@ -1,6 +1,8 @@
 <?php
-namespace DP\Includes;
+namespace DP\Includes\Ducks;
 
+use DP\Includes\Behaviors\FlyNoWay;
+use DP\Includes\Behaviors\Silence;
 use DP\Includes\Duck;
 
 /**
@@ -11,15 +13,13 @@ use DP\Includes\Duck;
 
 class DecoyDuck extends Duck {
 
+	public function __construct() {
+		// could pass in params to make decisions at runtime
+		$this->setQuackBehavior( new Silence() );
+		$this->setFlyBehavior( new FlyNoWay() );
+	}
+
 	public function display() {
 		return "I exist!!!";
-	}
-
-	public function fly() {
-		return "flying";
-	}
-
-	public function quack() {
-		return "QUACK!!!";
 	}
 }

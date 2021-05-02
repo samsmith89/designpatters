@@ -31,6 +31,7 @@ class Base {
 		<div class="dp-output" style="margin: 0 auto;">
 			<p>
 				<?php
+				// You can pass in the params here and make the whole thing dynamic at runtime
 					new DuckSimulator();
 				?>
 			</p>
