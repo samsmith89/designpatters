@@ -31,8 +31,7 @@ class Base {
 		<div class="dp-output" style="margin: 0 auto;">
 			<p>
 				<?php
-					$duck = new DuckSimulator();
-					$duck->testDuck();
+					new DuckSimulator();
 				?>
 			</p>
 		</div>

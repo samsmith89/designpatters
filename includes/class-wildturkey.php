@@ -9,12 +9,12 @@ use DP\Includes\Interfaces\Duck;
  * @since 1.0.0
  */
 
-class MallardDuck implements Duck {
+class WildTurkey {
 	public function fly() {
 		return "flying";
 	}
 
-	public function quack() {
-		return "QUACK!!!";
+	public function gobble() {
+		return "HONK!!!";
 	}
 }

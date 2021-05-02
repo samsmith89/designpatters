@@ -14,6 +14,12 @@ class DuckSimulator {
 
 	public function __construct() {
 		$this->setDuck(new MallardDuck());
+		$duck = $this->getDuck();
+		$this->testDuck($duck);
+
+		$this->setDuck(new WildTurkey());
+		$turkeyadapter = new TurkeyAdapter($this->getDuck());
+		$this->testDuck($turkeyadapter);
 	}
 
 	public function setDuck($duck) {
@@ -24,9 +30,11 @@ class DuckSimulator {
 		return $this->duck;
 	}
 
-	public function testDuck() {
-		$duck = $this->getDuck();
-		return $duck->quack() . '<br><br>' . $duck->fly();
+	public function testDuck($duck) {
+		$flystr = $duck->fly();
+		$quackstr = $duck->quack();
+		$words = "what";
+		echo $flystr . $words . $quackstr;
 	}
 
 }
