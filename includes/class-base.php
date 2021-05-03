@@ -1,7 +1,7 @@
 <?php
 namespace DP\Includes;
 
-use DP;
+use DP\Includes\StarBuzz;
 
 /**
  * Creates the additional column on admin pages for page template name
@@ -30,7 +30,7 @@ class Base {
 		<div class="dp-output" style="margin: 0 auto;">
 			<p>
 				<?php
-				echo 'something';
+				new StarBuzz();
 				?>
 			</p>
 		</div>
