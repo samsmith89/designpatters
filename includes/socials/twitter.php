@@ -1,5 +1,5 @@
 <?php
-namespace DP\Includes\Socials;
+namespace DP\Socials;
 
 
 //use DP\Includes;
@@ -10,8 +10,8 @@ namespace DP\Includes\Socials;
  * @since 1.0.0
  */
 
-class FB {
-	function post($status) {
+class Twitter {
+	function tweet($status) {
 		return $status;
 	}
 }

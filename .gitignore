@@ -3,9 +3,12 @@ phpcs.xml
 phpunit.xml
 Thumbs.db
 wp-cli.local.yml
+composer.lock
+.phpunit.result.cache
 node_modules/
 dist/
-vendor/
+vendor/*
+!vendor/autoload.php
 *.sql
 *.tar.gz
 *.zip

@@ -36,9 +36,9 @@ class DP {
 	 */
 
 	protected function includes() {
-		require_once( $this->get_plugin_dir() . 'includes/lib/autoloader.php' );
+		require_once( $this->get_plugin_dir() . 'vendor/autoload.php' );
 
-		DP\Includes\Base::get_instance();
+		DP\Base::get_instance();
 	}
 
 	/**

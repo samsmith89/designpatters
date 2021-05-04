@@ -1,5 +1,5 @@
 <?php
-namespace DP\Includes;
+namespace DP;
 
 
 //use DP\Includes;

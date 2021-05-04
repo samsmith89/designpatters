@@ -1,9 +1,9 @@
 <?php
-namespace DP\Includes;
+namespace DP;
 
-use DP\Includes\Socials\FB;
-use DP\Includes\Socials\Reddit;
-use DP\Includes\Socials\Twitter;
+use DP\Socials\FB;
+use DP\Socials\Reddit;
+use DP\Socials\Twitter;
 
 /**
  * Creates the additional column on admin pages for page template name
