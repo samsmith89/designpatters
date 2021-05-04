@@ -36,6 +36,7 @@ class DP {
 	 */
 
 	protected function includes() {
+		// Look into autoloading for production: https://www.smashingmagazine.com/2015/05/how-to-use-autoloading-and-a-plugin-container-in-wordpress-plugins/
 		require_once( $this->get_plugin_dir() . 'vendor/autoload.php' );
 
 		DP\Base::get_instance();
