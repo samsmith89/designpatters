@@ -9,6 +9,7 @@ node_modules/
 dist/
 vendor/*
 !vendor/autoload.php
+!vendor/composer
 *.sql
 *.tar.gz
 *.zip
