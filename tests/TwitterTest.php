@@ -1,11 +1,12 @@
 <?php
 
-use \DP\Socials\Twitter;
+namespace PluginTests;
 
-class TwitterTest extends \PHPUnit\Framework\TestCase
-{
-	public function test_shouldWork()
-	{
+use DP\Socials\Twitter;
+use PHPUnit\Framework\TestCase;
+
+class TwittersTest extends TestCase {
+	public function test_shouldWork() {
 		$twitter = new Twitter();
 		$status = "totes";
 		$twitter->tweet($status);
